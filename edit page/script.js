@@ -47,7 +47,8 @@ function jsonise(){
 
 //turn URL into shopping list array
 function parseShoppingList(){
-  var encodeURIShoppingList = document.getElementById("jsonString").value;
+  var encodeURIShoppingList = window.location.hash.substr(1);
+  console.log(encodeURIShoppingList);
   var jsonShoppingList = decodeURIComponent(encodeURIShoppingList);
   var parsedShoppingList = JSON.parse(jsonShoppingList);
   var itemInfo = "";
