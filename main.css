@@ -1,0 +1,12 @@
+#addingItem {
+  display: flex;
+
+}
+.jsonise {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: auto;
+}
